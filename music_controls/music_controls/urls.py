@@ -19,5 +19,6 @@ from django.urls import path, include
 # this is where the main url is stored
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('musicApi.urls'))
+    path('muiscApi/', include('musicApi.urls')),
+    path('', include('frontend.urls'))
 ]
